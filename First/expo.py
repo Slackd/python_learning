@@ -5,4 +5,4 @@ def raise_to_power(base_num, pow_num):
     return result
 
 
-print(raise_to_power(3, 4))
+print(raise_to_power(22, 2))
