@@ -1,5 +1,5 @@
 while True:
-    magicWord = input("Enter Magic Word:")
+    magicWord = input("Enter Magic Word: ")
     if magicWord == 'Pizza':
         break
     print(magicWord)
