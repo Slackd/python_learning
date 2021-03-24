@@ -28,9 +28,9 @@ print("3. Exit:\n")
 option = int(input("Choice>1/2 or 3:"))
 
 # Logic of the program
-if option == 1 :
+if option == 1:
     celciusFahrenheit()
-elif option == 2: 
+elif option == 2:
     fahrenheitCelcius()
 # Exit function
 else:
