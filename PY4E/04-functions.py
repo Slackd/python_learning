@@ -4,6 +4,15 @@
 # C to F and F to C functionality
 
 # Function definitions of c2f and f2c
+
+def celciusKelvin():
+    try:
+        celcius = float(input("Enter Temperature in C to Convert to Kelvin:"))
+        kelvin = (celcius + 273.15)
+        print("The Temperature in K is: ", kelvin, "Kelvin")
+    except:
+        print("Please enter a number only!")
+
 def celciusFahrenheit():
     try:
         celcius = float(input("Enter ^C Temperature:"))
@@ -22,17 +31,20 @@ def fahrenheitCelcius():
 
 
 # Step 1 : Offer a choice to the user between Celcius to Fahrenheit or the reverse. User can select either 1 or 2 numnerically
-print("1. Convert Celcius to Fahrenheit:")
-print("2. Convert Fahrenheit to Celcius:")
-print("3. Exit:\n")
+print("1. Convert Celcius to Kelvin:")
+print("2. Convert Celcius to Fahrenheit:")
+print("3. Convert Fahrenheit to Celcius:")
+print("4. Exit:\n")
 option = int(input("Choice>1/2 or 3:"))
 
 # Logic of the program
 if option == 1:
-    celciusFahrenheit()
+    celciusKelvin()
 elif option == 2:
+    celciusFahrenheit()
+elif option == 3:
     fahrenheitCelcius()
 # Exit function
 else:
-    option == 3
+    option == 4
     exit()
